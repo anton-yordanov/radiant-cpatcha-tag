@@ -1,10 +1,16 @@
 = Custom Tags
 
-Very basic and simple cpatcha that can be used in forms.
+== <r:cpatcha/> 
+
+== Very basic and simple cpatcha that can be used in forms.
+
 
 Read this: http://captchator.com/
 For instalation read this: https://github.com/radiant/radiant/wiki/Installing-Extensions#wiki-manual
 
-Using with Mailer extention, read this: git://gist.github.com/1225147.git
-Thats is not very good solution but .....
+Code is here: /app/models/custom_tags.rb
+
+For using with Mailer extention read this: git://gist.github.com/1225147.git
+
+Thats is not very good solution but i don't like Radiant
 
