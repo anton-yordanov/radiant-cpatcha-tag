@@ -1,8 +1,6 @@
 = Custom Tags
-
-== <r:cpatcha/> 
-
-== Very basic and simple cpatcha that can be used in forms.
+= <r:cpatcha/> 
+= Very basic and simple cpatcha that can be used in forms.
 
 
 Read this: http://captchator.com/
