@@ -1,3 +1,10 @@
 = Custom Tags
 
-Description goes here
+Very basic and simple cpatcha that may be used on forms.
+
+Read this: http://captchator.com/
+For instalation read this: https://github.com/radiant/radiant/wiki/Installing-Extensions#wiki-manual
+
+Using with Mailer extention, read this: git://gist.github.com/1225147.git
+Thats is not very good solution but .....
+
