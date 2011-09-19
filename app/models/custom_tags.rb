@@ -9,7 +9,7 @@ module CustomTags
           <img id="cpatcha_img" src="http://captchator.com/captcha/image/#{tag.expand}" />
           <br />
           <input type="hidden" name="cpatcha_key" value="#{tag.expand}" />
-          <input name="cpatcha" class="txt_form" value="" />
+          <input id="cpatcha" name="cpatcha" class="txt_form" value="" />
         </div>      
     </div>}
   end
