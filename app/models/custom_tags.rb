@@ -16,7 +16,7 @@ module CustomTags
   
   desc "Make key for CPATCHA, because session in templates and that in Mailer are diferent ???"
   tag "cpatcha_key" do |tag|
-    h "#{request.session.id.to_s[4..12]}"
+    h "#{request.session.id.to_s.strip[4..12]}"
   end
     
 end
