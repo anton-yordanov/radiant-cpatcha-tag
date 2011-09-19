@@ -4,15 +4,19 @@ module CustomTags
   
   desc "Creates an CPATCHA"
   tag "cpatcha" do |tag|
-    %{<div class="cpatcha">
-        <img src="http://captchator.com/captcha/image/99871467714092"/>
+    %{<div class="cpatcha">        
         <div class="just_txt">
-          <input name="cpatcha" class="just_txt" value=""/>
-        </div>
-      <div class="content">
-        #{tag.expand}
-      </div>
+          <img id="cpatcha_img" src="http://captchator.com/captcha/image/#{tag.expand}" />
+          <br />
+          <input type="hidden" name="cpatcha_key" value="#{tag.expand}" />
+          <input name="cpatcha" class="txt_form" value="" />
+        </div>      
     </div>}
+  end
+  
+  desc "Make key for CPATCHA, because session in templates and that in Mailer are diferent ???"
+  tag "cpatcha_key" do |tag|
+    h "#{request.session.id.to_s[4..12]}"
   end
     
 end

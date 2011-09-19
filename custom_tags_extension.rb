@@ -6,6 +6,9 @@ class CustomTagsExtension < Radiant::Extension
 
   
   def activate
+    SiteController.class_eval{
+      session :disabled => false
+    }
     Page.send :include, CustomTags
   end
 end
